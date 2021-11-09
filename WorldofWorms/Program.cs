@@ -1,12 +1,10 @@
-﻿using System;
-
-namespace WorldOfWorms
+﻿namespace WorldOfWorms
 {
     static class Program
     {
         static void Main(string[] args)
         {
-            new World().start();
+            new WorldController().Start();
         }
     }
 }

@@ -1,10 +1,12 @@
 ﻿namespace WorldOfWorms
 {
-    enum Route
+    enum Actions
     {
         Forward,
         Back,
         Right,
-        Left
+        Left,
+        StayPut,
+        Reproduce
     }
 }

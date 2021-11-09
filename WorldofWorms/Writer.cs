@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Text;
 
 namespace WorldOfWorms
 {
@@ -14,9 +15,10 @@ namespace WorldOfWorms
         {
             sw = new StreamWriter(path, false, System.Text.Encoding.Default);
         }
-        public void Write(string name, int x, int y)
+
+        public void Write(PrintInfo info)
         {
-            sw.WriteLine($"Worms: [{name} ({x}, {y})]");
+            sw.WriteLine($"{info.CurrentMove} - Worms:[{info.WormName} ({info.X}, {info.Y})], Food: [{info.FoodInfo}], Actions - {info.CurrentActions}, Health - {info.Health}");
         }
 
         public void Close()
