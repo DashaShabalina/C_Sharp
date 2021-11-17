@@ -4,7 +4,7 @@ namespace WorldOfWorms
 {
     public class PrintInfo
     {
-        public PrintInfo(string Name, int x, int y, int move, StringBuilder foodInfo, Actions actions,int health)
+        public PrintInfo(string Name, int x, int y, int move, StringBuilder foodInfo, Actions actions, int health)
         {
             WormName = Name;
             X = x;
@@ -20,6 +20,6 @@ namespace WorldOfWorms
         public int CurrentMove { get; set; }
         public StringBuilder FoodInfo { get; set; }
         public Actions CurrentActions { get; set; }
-        public int Health { get; set; } 
+        public int Health { get; set; }
     }
 }
