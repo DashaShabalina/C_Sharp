@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "ebedfd49-e3dd-47c9-bd52-c876faf7771c": {
+      "ProjectGuid": "ebedfd49-e3dd-47c9-bd52-c876faf7771c",
+      "DisplayName": "WorldOfWorms.Tests",
+      "ColorIndex": 0
+    },
+    "7fa1154c-625e-4ed2-9932-bc70a36fa360": {
+      "ProjectGuid": "7fa1154c-625e-4ed2-9932-bc70a36fa360",
+      "DisplayName": "WorldOfWorms.Tests",
+      "ColorIndex": 1
+    },
+    "8ac92e67-6fa1-4654-bcfe-6f0bee3aa435": {
+      "ProjectGuid": "8ac92e67-6fa1-4654-bcfe-6f0bee3aa435",
+      "DisplayName": "WorldOfWorms",
+      "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Прочие файлы",
+      "ColorIndex": -1
+    },
+    "0b12aab9-b6d9-4821-995d-c1427b1a40db": {
+      "ProjectGuid": "0b12aab9-b6d9-4821-995d-c1427b1a40db",
+      "DisplayName": "WorldofWorms",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}
