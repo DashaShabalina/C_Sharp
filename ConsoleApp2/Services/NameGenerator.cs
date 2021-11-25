@@ -1,7 +1,7 @@
 ﻿using System;
 namespace WorldOfWorms
 {
-    class NameGenerator
+    public class NameGenerator
     {
         private static int counter = 0;
         static public String GetName()

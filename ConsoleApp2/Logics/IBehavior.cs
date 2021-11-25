@@ -2,7 +2,7 @@
 
 namespace WorldOfWorms
 {
-    interface IBehavior
+    public interface IBehavior
     {
         Actions Execute(Dictionary<Worm, Сoordinates> world, List<Food> food);
     }

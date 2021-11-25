@@ -3,7 +3,7 @@ using pos = WorldOfWorms.Сoordinates;
 
 namespace WorldOfWorms
 {
-    class Worm
+    public class Worm
     {
         private readonly string name;
 

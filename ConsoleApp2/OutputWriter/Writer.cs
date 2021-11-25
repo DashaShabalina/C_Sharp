@@ -7,8 +7,9 @@ namespace WorldOfWorms
     public interface IWriter
     {
         void Write(PrintInfo info);
+        //void Close();
     }
-    class Writer : IWriter
+    public class Writer : IWriter, IDisposable
     {
         private readonly StreamWriter sw;
         public Writer()
@@ -25,9 +26,15 @@ namespace WorldOfWorms
             sw.WriteLine($"{info.CurrentMove} - Worms:[{info.WormName} ({info.X}, {info.Y})], Food: [{info.FoodInfo}], Actions - {info.CurrentActions}, Health - {info.Health}");
         }
 
-        public void Close()
+        
+        //public void Close()
+        //{
+        //    sw.Close();
+        //}
+
+        public void Dispose()
         {
-            sw.Close();
+            sw.Dispose();
         }
     }
 }

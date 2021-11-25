@@ -3,14 +3,14 @@ using System;
 
 namespace WorldOfWorms
 {
-    class Behavior : IBehavior
+    public class Behavior : IBehavior
     {
         private readonly Worm worm;
         public Behavior(Worm worm)
         {
             this.worm = worm;
         }
-        public  Actions Execute(Dictionary<Worm, Сoordinates> world, List<Food> food)
+        public Actions Execute(Dictionary<Worm, Сoordinates> world, List<Food> food)
         {
             int minDist = Int32.MaxValue;
             int index = -1;
@@ -51,7 +51,7 @@ namespace WorldOfWorms
                         }
                         return xNearFood < world[worm].X ? Actions.Left : Actions.Right;
                     }
-                    else 
+                    else
                     {
                         int coor = world[worm].Y + 1;
                         int coor1 = world[worm].Y - 1;

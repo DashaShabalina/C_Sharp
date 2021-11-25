@@ -2,7 +2,7 @@
 
 namespace WorldOfWorms
 {
-    class Сoordinates
+    public class Сoordinates
     {
         private static Random rn = new Random();
         public int X { get; set; }

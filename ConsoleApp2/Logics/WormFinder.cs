@@ -3,7 +3,7 @@ using pos = WorldOfWorms.Сoordinates;
 
 namespace WorldOfWorms
 {
-    static class WormFinder
+    public static class WormFinder
     {
         public static bool Find(Dictionary<Worm, pos> world, int x, int y)
         {

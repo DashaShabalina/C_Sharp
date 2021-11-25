@@ -7,12 +7,17 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace WorldOfWorms
 {
-    class FoodController
+    public class FoodController
     {
-        private IServiceScopeFactory _scopeFactory;
-        public FoodController(IServiceScopeFactory scopeFactory)
+        //private IServiceScopeFactory _scopeFactory;
+        /*public FoodController(IServiceScopeFactory scopeFactory)
         {
             _scopeFactory = scopeFactory;
+        }*/
+        Food curFood;
+        public FoodController(Food curFood)
+        {
+            this.curFood = curFood;
         }
         public void ControlFood(World world)
         {
@@ -32,15 +37,15 @@ namespace WorldOfWorms
             {
                 world.RemoveFood(index);
             }
-            Food curFood;
+            
 
             //еда создалась повторно в одной точке - пересоздать
             while (true)
             {
-                using (var foodScope = _scopeFactory.CreateScope())
+               /* using (var foodScope = _scopeFactory.CreateScope())
                 {
                     var foodGenerator = foodScope.ServiceProvider.GetRequiredService<IFoodGenerator>();
-                    curFood = foodGenerator.GetFood();
+                    curFood = foodGenerator.GetFood();*/
                 
                    // curFood = new FoodGenerator().GetFood();
                 int flag1 = 0;
@@ -74,4 +79,4 @@ namespace WorldOfWorms
             }
         }
     }
-}
+//}
