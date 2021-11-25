@@ -2,7 +2,7 @@ name: .NET
 
 on:
   push:
-    branches: [master]
+    branches: [lab4]
 
 jobs:
   build:
