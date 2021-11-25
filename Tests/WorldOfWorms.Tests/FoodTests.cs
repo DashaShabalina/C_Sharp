@@ -15,7 +15,6 @@ namespace WorldOfWorms.Tests
             services.AddSingleton<IFoodGenerator, FoodGenerator>();
             _sp = services.BuildServiceProvider();
         }
-
         [TestCase(10)]
         public void ShouldBeRightGenerateFood(int countFoods)
         {
