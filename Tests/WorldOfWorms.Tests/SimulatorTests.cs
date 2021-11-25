@@ -26,7 +26,7 @@ namespace WorldOfWorms.Tests
         {
             var stabBehaviour = new Mock<IBehavior>();
             stabBehaviour
-            .Setup(mb => mb.Execute(It.IsAny<Dictionary<Worm, 裲ordinates>>(), It.IsAny<List<Food>>()))
+            .Setup(mb => mb.Execute(It.IsAny<Dictionary<Worm, 小oordinates>>(), It.IsAny<List<Food>>()))
             .Returns(action);
 
             var state = new World();
@@ -67,7 +67,7 @@ namespace WorldOfWorms.Tests
         {
             var stabBehaviour = new Mock<IBehavior>();
             stabBehaviour
-            .Setup(mb => mb.Execute(It.IsAny<Dictionary<Worm, 裲ordinates>>(), It.IsAny<List<Food>>()))
+            .Setup(mb => mb.Execute(It.IsAny<Dictionary<Worm, 小oordinates>>(), It.IsAny<List<Food>>()))
             .Returns(Actions.Reproduce);
 
             var state = new World();
@@ -86,7 +86,7 @@ namespace WorldOfWorms.Tests
         {
             var stabBehaviour = new Mock<IBehavior>();
             stabBehaviour
-            .Setup(mb => mb.Execute(It.IsAny<Dictionary<Worm, 裲ordinates>>(), It.IsAny<List<Food>>()))
+            .Setup(mb => mb.Execute(It.IsAny<Dictionary<Worm, 小oordinates>>(), It.IsAny<List<Food>>()))
             .Returns(Actions.Reproduce);
             var state = new World();
             var worm = state.AddWorm(0, 0);
@@ -108,7 +108,7 @@ namespace WorldOfWorms.Tests
         {
             var stabBehaviour = new Mock<IBehavior>();
             stabBehaviour
-            .Setup(mb => mb.Execute(It.IsAny<Dictionary<Worm, 裲ordinates>>(), It.IsAny<List<Food>>()))
+            .Setup(mb => mb.Execute(It.IsAny<Dictionary<Worm, 小oordinates>>(), It.IsAny<List<Food>>()))
             .Returns(Actions.Right);
 
             var state = new World();
