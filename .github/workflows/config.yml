@@ -24,4 +24,4 @@ jobs:
     - name: Codecov upload
       uses: codecov/codecov-action@v2
       with:
-        token: acefca5d-53b1-4a10-b52b-92c68507064a
+        token: edaaa44d-3683-4142-8c8a-d59d20f8c097
