@@ -16,7 +16,7 @@ namespace WorldOfWorms.Tests
             _sp = services.BuildServiceProvider();
         }
 
-        [TestCase(30)]
+        [TestCase(5)]
         public void ShouldBeRightGenerateFood(int countFoods)
         {
             var state = new World();

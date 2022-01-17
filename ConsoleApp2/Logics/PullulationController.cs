@@ -11,7 +11,7 @@ namespace WorldOfWorms
                 int flag1 = 0, flag2 = 0, flag3 = 0, flag4 = 0;
                 foreach (Worm worm in world.WorldInfo.Keys)
                 {
-                    if (WormFinder.Find(world.WorldInfo, j.X + 1, j.Y))
+                    if (WormFinder.Find(world.WorldInfo, j.X + 1, j.Y) )
                     {
                         flag1++;
                     }
@@ -35,15 +35,15 @@ namespace WorldOfWorms
                     {
                         flag1++;
                     }
-                    else if (FoodFinder.Find(world.Food, j.X - 1, j.Y))
+                    if (FoodFinder.Find(world.Food, j.X - 1, j.Y))
                     {
                         flag2++;
                     }
-                    else if (FoodFinder.Find(world.Food, j.X, j.Y + 1))
+                    if (FoodFinder.Find(world.Food, j.X, j.Y + 1))
                     {
                         flag3++;
                     }
-                    else if (FoodFinder.Find(world.Food, j.X, j.Y - 1))
+                    if (FoodFinder.Find(world.Food, j.X, j.Y - 1))
                     {
                         flag4++;
                     }

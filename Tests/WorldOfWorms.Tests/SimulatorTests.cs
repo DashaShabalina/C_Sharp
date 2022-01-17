@@ -24,7 +24,7 @@ namespace WorldOfWorms.Tests
         [TestCase(Actions.StayPut)]
         public void ShouldBeRightInteraction(Actions action)
         {
-            var stabBehaviour = new Mock<IBehavior>();
+            var stabBehaviour = new Mock<IWormBehavior>();
             stabBehaviour
             .Setup(mb => mb.Execute(It.IsAny<Dictionary<Worm, Ñoordinates>>(), It.IsAny<List<Food>>()))
             .Returns(action);
@@ -33,7 +33,7 @@ namespace WorldOfWorms.Tests
             var worm = state.AddWorm(0, 0);
 
             var simulator = new WorldSimulatorService(_sp.GetService<IApplicationLifetime>(),
-            _sp.GetService<IServiceScopeFactory>(), state, 1);
+            _sp.GetService<IServiceScopeFactory>(), state, null,1);
             Actions route;
             simulator.AskWorms(worm, stabBehaviour.Object, out route);
 
@@ -65,7 +65,7 @@ namespace WorldOfWorms.Tests
         [Test]
         public void ShouldRightReproduce()
         {
-            var stabBehaviour = new Mock<IBehavior>();
+            var stabBehaviour = new Mock<IWormBehavior>();
             stabBehaviour
             .Setup(mb => mb.Execute(It.IsAny<Dictionary<Worm, Ñoordinates>>(), It.IsAny<List<Food>>()))
             .Returns(Actions.Reproduce);
@@ -74,7 +74,7 @@ namespace WorldOfWorms.Tests
             var worm = state.AddWorm(0, 0);
 
             var simulator = new WorldSimulatorService(_sp.GetService<IApplicationLifetime>(),
-            _sp.GetService<IServiceScopeFactory>(), state, 1);
+            _sp.GetService<IServiceScopeFactory>(), state, null, 1);
             Actions route;
             simulator.AskWorms(worm, stabBehaviour.Object, out route);
             new PullulationController().ControlPullulation(state, simulator.newWorms);
@@ -84,7 +84,7 @@ namespace WorldOfWorms.Tests
         [Test]
         public void ReproduceUnsuccessful()
         {
-            var stabBehaviour = new Mock<IBehavior>();
+            var stabBehaviour = new Mock<IWormBehavior>();
             stabBehaviour
             .Setup(mb => mb.Execute(It.IsAny<Dictionary<Worm, Ñoordinates>>(), It.IsAny<List<Food>>()))
             .Returns(Actions.Reproduce);
@@ -96,7 +96,7 @@ namespace WorldOfWorms.Tests
             var worm4 = state.AddWorm(0, -1);
 
             var simulator = new WorldSimulatorService(_sp.GetService<IApplicationLifetime>(),
-            _sp.GetService<IServiceScopeFactory>(), state, 1);
+            _sp.GetService<IServiceScopeFactory>(), state, null,1);
             Actions route;
             simulator.AskWorms(worm, stabBehaviour.Object, out route);
             new PullulationController().ControlPullulation(state, simulator.newWorms);
@@ -106,7 +106,7 @@ namespace WorldOfWorms.Tests
         [Test]
         public void ShouldRighMoveToCellOccupied()
         {
-            var stabBehaviour = new Mock<IBehavior>();
+            var stabBehaviour = new Mock<IWormBehavior>();
             stabBehaviour
             .Setup(mb => mb.Execute(It.IsAny<Dictionary<Worm, Ñoordinates>>(), It.IsAny<List<Food>>()))
             .Returns(Actions.Right);
@@ -116,7 +116,7 @@ namespace WorldOfWorms.Tests
             var worm1 = state.AddWorm(1, 0);
 
             var simulator = new WorldSimulatorService(_sp.GetService<IApplicationLifetime>(),
-            _sp.GetService<IServiceScopeFactory>(), state, 1);
+            _sp.GetService<IServiceScopeFactory>(), state, null,1);
             Actions route;
             simulator.AskWorms(worm, stabBehaviour.Object, out route);
 
@@ -132,9 +132,9 @@ namespace WorldOfWorms.Tests
             state.AddFood(new Food(1, 0));
 
             var simulator = new WorldSimulatorService(_sp.GetService<IApplicationLifetime>(),
-            _sp.GetService<IServiceScopeFactory>(), state, 1);
+            _sp.GetService<IServiceScopeFactory>(), state, null, 1);
             Actions route;
-            simulator.AskWorms(worm, new Behavior(worm), out route);
+            simulator.AskWorms(worm, new WormBehavior(worm), out route);
 
             worm.Health.Should().Be(20);
         }

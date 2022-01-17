@@ -1,0 +1,14 @@
+1 - Worms:[Worm1 (-1, 0)], Food: [(-6,1)], Actions - Left, Health - 9
+2 - Worms:[Worm1 (-2, 0)], Food: [(-6,1)(4,-9)], Actions - Left, Health - 8
+3 - Worms:[Worm1 (-3, 0)], Food: [(-6,1)(4,-9)(8,4)], Actions - Left, Health - 7
+4 - Worms:[Worm1 (-4, 0)], Food: [(-6,1)(4,-9)(8,4)(-5,-1)], Actions - Left, Health - 6
+5 - Worms:[Worm1 (-5, 0)], Food: [(-6,1)(4,-9)(8,4)(-5,-1)(5,-3)], Actions - Left, Health - 5
+6 - Worms:[Worm1 (-5, -1)], Food: [(-6,1)(4,-9)(8,4)(-5,-1)(5,-3)(4,-11)], Actions - Back, Health - 14
+7 - Worms:[Worm1 (-5, -1)], Food: [(-6,1)(4,-9)(8,4)(5,-3)(4,-11)(-6,5)], Actions - Reproduce, Health - 3
+8 - Worms:[Worm1 (-5, -1)], Food: [(-6,1)(4,-9)(8,4)(5,-3)(4,-11)(-6,5)(-4,-2)], Actions - Right, Health - 2
+8 - Worms:[Worm2 (-4, -2)], Food: [(-6,1)(4,-9)(8,4)(5,-3)(4,-11)(-6,5)(-4,-2)], Actions - Back, Health - 19
+9 - Worms:[Worm1 (-5, -1)], Food: [(-6,1)(4,-9)(8,4)(5,-3)(4,-11)(-6,5)(3,1)], Actions - StayPut, Health - 1
+9 - Worms:[Worm2 (-4, -2)], Food: [(-6,1)(4,-9)(8,4)(5,-3)(4,-11)(-6,5)(3,1)], Actions - Reproduce, Health - 8
+10 - Worms:[Worm1 (-5, -1)], Food: [(-6,1)(4,-9)(8,4)(5,-3)(4,-11)(-6,5)(3,1)(5,-4)], Actions - StayPut, Health - 0
+10 - Worms:[Worm2 (-4, -2)], Food: [(-6,1)(4,-9)(8,4)(5,-3)(4,-11)(-6,5)(3,1)(5,-4)], Actions - StayPut, Health - 7
+10 - Worms:[Worm3 (-2, -2)], Food: [(-6,1)(4,-9)(8,4)(5,-3)(4,-11)(-6,5)(3,1)(5,-4)], Actions - Right, Health - 9

@@ -25,7 +25,17 @@
       "ProjectGuid": "0b12aab9-b6d9-4821-995d-c1427b1a40db",
       "DisplayName": "WorldofWorms",
       "ColorIndex": 3
+    },
+    "ffbe686d-64fd-4539-81da-d28fb2bcedfd": {
+      "ProjectGuid": "ffbe686d-64fd-4539-81da-d28fb2bcedfd",
+      "DisplayName": "WorldOfWorms.Tests",
+      "ColorIndex": 4
+    },
+    "edaaaec9-53f6-4991-a149-39a27c14cec3": {
+      "ProjectGuid": "edaaaec9-53f6-4991-a149-39a27c14cec3",
+      "DisplayName": "WorldofWorms.Data",
+      "ColorIndex": 5
     }
   },
-  "NextColorIndex": 4
+  "NextColorIndex": 6
 }

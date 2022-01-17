@@ -1,0 +1,14 @@
+C:\Users\dshab\source\repos\WorldofWorms\Library\WorldofWorms.Data\bin\Debug\net6.0\WorldofWorms.Data.deps.json
+C:\Users\dshab\source\repos\WorldofWorms\Library\WorldofWorms.Data\bin\Debug\net6.0\WorldofWorms.Data.runtimeconfig.json
+C:\Users\dshab\source\repos\WorldofWorms\Library\WorldofWorms.Data\bin\Debug\net6.0\WorldofWorms.Data.dll
+C:\Users\dshab\source\repos\WorldofWorms\Library\WorldofWorms.Data\bin\Debug\net6.0\ref\WorldofWorms.Data.dll
+C:\Users\dshab\source\repos\WorldofWorms\Library\WorldofWorms.Data\bin\Debug\net6.0\WorldofWorms.Data.pdb
+C:\Users\dshab\source\repos\WorldofWorms\Library\WorldofWorms.Data\obj\Debug\net6.0\WorldofWorms.Data.csproj.AssemblyReference.cache
+C:\Users\dshab\source\repos\WorldofWorms\Library\WorldofWorms.Data\obj\Debug\net6.0\WorldofWorms.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dshab\source\repos\WorldofWorms\Library\WorldofWorms.Data\obj\Debug\net6.0\WorldofWorms.Data.AssemblyInfoInputs.cache
+C:\Users\dshab\source\repos\WorldofWorms\Library\WorldofWorms.Data\obj\Debug\net6.0\WorldofWorms.Data.AssemblyInfo.cs
+C:\Users\dshab\source\repos\WorldofWorms\Library\WorldofWorms.Data\obj\Debug\net6.0\WorldofWorms.Data.csproj.CoreCompileInputs.cache
+C:\Users\dshab\source\repos\WorldofWorms\Library\WorldofWorms.Data\obj\Debug\net6.0\WorldofWorms.Data.dll
+C:\Users\dshab\source\repos\WorldofWorms\Library\WorldofWorms.Data\obj\Debug\net6.0\ref\WorldofWorms.Data.dll
+C:\Users\dshab\source\repos\WorldofWorms\Library\WorldofWorms.Data\obj\Debug\net6.0\WorldofWorms.Data.pdb
+C:\Users\dshab\source\repos\WorldofWorms\Library\WorldofWorms.Data\obj\Debug\net6.0\WorldofWorms.Data.genruntimeconfig.cache

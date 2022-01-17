@@ -18,7 +18,7 @@ namespace WorldOfWorms
 
         public Actions GetBehavior(Dictionary<Worm, pos> world, List<Food> food)
         {
-            return new Behavior(this).Execute(world, food);
+            return new WormBehavior(this).Execute(world, food);
         }
     }
 }
