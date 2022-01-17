@@ -1,13 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
 using NUnit.Framework;
-using System;
 using FluentAssertions;
 using WorldofWorms.Data;
 
 namespace WorldOfWorms.Tests
 {
-    public class BehaviorGenerationTest : EnvironmentContext
+    public class BehaviorGenerationTest 
     {
         private DbContextOptions<EnvironmentContext> options;
 
@@ -36,4 +34,3 @@ namespace WorldOfWorms.Tests
         }
     }
 }
-
